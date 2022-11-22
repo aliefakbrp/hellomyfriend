@@ -75,8 +75,12 @@ with modeling:
       st.dataframe(label_knn)
 
 with implementation:
+      df=df[:2000]
       from sklearn.preprocessing import OrdinalEncoder
+      x = df.drop(df[['class']],axis=1)
       enc = OrdinalEncoder()
+      a = enc.fit_transform(x)
+      x=pd.DataFrame(a, columns=x.columns)
       x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
       # x_new = ["x","s","w","t","p","f","c","n","k","e","e","s","s","w","w","p","w","o","p","k","v","g"] # hasil=1/p
       hinput=enc.transform(np.array([x_new]))

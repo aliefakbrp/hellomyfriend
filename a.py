@@ -49,7 +49,7 @@ dataframe, preporcessing, modeling, implementation = st.tabs(
 
 with dataframe:
     st.write('Data Wine Quality')
-    dataset= st.tabs(['Dataset'])
+    dataset,data= st.tabs(['Dataset',"data"])
     with dataset:
         st.dataframe(df)
 
@@ -60,8 +60,8 @@ with preporcessing:
 
 with modeling:
     # pisahkan fitur dan label
-    knn= st.tabs(
-        ["K-Nearest Neighbor"])
+    knn,lainnya= st.tabs(
+        ["K-Nearest Neighbor","lainnya])
     with knn:
       from sklearn.neighbors import KNeighborsClassifier
       knn = KNeighborsClassifier(n_neighbors=3)

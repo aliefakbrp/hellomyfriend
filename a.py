@@ -1,11 +1,18 @@
-import numpy as np
-import pandas as pd
-# import seaborn as sns
+# import numpy as np
+# import pandas as pd
+# # import seaborn as sns
+# import sklearn
+# from sklearn.preprocessing import LabelEncoder
+# from sklearn.preprocessing import OneHotEncoder
+# from sklearn.model_selection import train_test_split
+# from sklearn.metrics import accuracy_score
 import sklearn
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+import streamlit as st
+import pandas as pd 
+import numpy as np 
+import warnings
+from sklearn.metrics import make_scorer, accuracy_score,precision_score
+warnings.filterwarnings('ignore', category=UserWarning, append=True)
 
 # data
 df = pd.read_csv("https://raw.githubusercontent.com/aliefakbrp/dataset/main/mushrooms.csv")

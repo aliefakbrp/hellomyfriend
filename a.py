@@ -75,6 +75,7 @@ with modeling:
       st.dataframe(label_knn)
 
 with implementation:
+      enc = OrdinalEncoder()
       x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
       # x_new = ["x","s","w","t","p","f","c","n","k","e","e","s","s","w","w","p","w","o","p","k","v","g"] # hasil=1/p
       hinput=enc.transform(np.array([x_new]))
@@ -87,7 +88,7 @@ with implementation:
       acc_knn = round(knn.score(x_train, y_train) * 100, 2)
       accuracy_knn
       acc_knn
-      y_predict = knn.predict(x_new)
+      y_predict = knn.predict(hinput)
       st.write("Hasil prediksi adalah",y_predict[0])
       # return y_predict[0]
 

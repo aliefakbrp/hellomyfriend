@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import seaborn as sns
+# import seaborn as sns
 import sklearn
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder

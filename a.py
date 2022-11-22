@@ -61,7 +61,7 @@ with preporcessing:
 with modeling:
     # pisahkan fitur dan label
     knn,lainnya= st.tabs(
-        ["K-Nearest Neighbor","lainnya])
+        ["K-Nearest Neighbor","lainnya"])
     with knn:
       from sklearn.neighbors import KNeighborsClassifier
       knn = KNeighborsClassifier(n_neighbors=3)

@@ -48,7 +48,7 @@ dataframe, preporcessing, modeling, implementation = st.tabs(
     ["Jamur Data", "Prepocessing", "Modeling", "Implementation"])
 
 with dataframe:
-    st.write('Data Wine Quality')
+    st.write('Data Jamur')
     dataset,data= st.tabs(['Dataset',"data"])
     with dataset:
         st.dataframe(df)

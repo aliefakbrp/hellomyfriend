@@ -99,33 +99,33 @@ with implementation:
 
 
 
-# KNN
-from sklearn.neighbors import KNeighborsClassifier
-knn = KNeighborsClassifier(n_neighbors=3)
-knn.fit(x_train,y_train)
+# # KNN
+# from sklearn.neighbors import KNeighborsClassifier
+# knn = KNeighborsClassifier(n_neighbors=3)
+# knn.fit(x_train,y_train)
 
-# Akurasi
-Y_pred = knn.predict(x_test) 
-accuracy_knn=round(accuracy_score(y_test,Y_pred)* 100, 2)
-acc_knn = round(knn.score(x_train, y_train) * 100, 2)
-accuracy_knn
-acc_knn
+# # Akurasi
+# Y_pred = knn.predict(x_test) 
+# accuracy_knn=round(accuracy_score(y_test,Y_pred)* 100, 2)
+# acc_knn = round(knn.score(x_train, y_train) * 100, 2)
+# accuracy_knn
+# acc_knn
 
-x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
-# x_new = ["x","s","w","t","p","f","c","n","k","e","e","s","s","w","w","p","w","o","p","k","v","g"] # hasil=1/p
-hinput=enc.transform(np.array([x_new]))
-hinput
+# x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
+# # x_new = ["x","s","w","t","p","f","c","n","k","e","e","s","s","w","w","p","w","o","p","k","v","g"] # hasil=1/p
+# hinput=enc.transform(np.array([x_new]))
+# hinput
 
-def KNN(x_new):
-      from sklearn.neighbors import KNeighborsClassifier
-      knn = KNeighborsClassifier(n_neighbors=3)
-      knn.fit(x_train,y_train)
-      Y_pred = knn.predict(x_test) 
-      accuracy_knn=round(accuracy_score(y_test,Y_pred)* 100, 2)
-      acc_knn = round(knn.score(x_train, y_train) * 100, 2)
-      accuracy_knn
-      acc_knn
-      y_predict = knn.predict(x_new)
-      print(y_predict[0])
-      return y_predict[0]
-KNN(hinput)
+# def KNN(x_new):
+#       from sklearn.neighbors import KNeighborsClassifier
+#       knn = KNeighborsClassifier(n_neighbors=3)
+#       knn.fit(x_train,y_train)
+#       Y_pred = knn.predict(x_test) 
+#       accuracy_knn=round(accuracy_score(y_test,Y_pred)* 100, 2)
+#       acc_knn = round(knn.score(x_train, y_train) * 100, 2)
+#       accuracy_knn
+#       acc_knn
+#       y_predict = knn.predict(x_new)
+#       print(y_predict[0])
+#       return y_predict[0]
+# KNN(hinput)

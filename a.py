@@ -15,7 +15,7 @@ from sklearn.metrics import make_scorer, accuracy_score,precision_score
 warnings.filterwarnings('ignore', category=UserWarning, append=True)
 
 # data
-df = pd.read_csv("https://raw.githubusercontent.com/aliefakbrp/dataset/main/mushrooms.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/08-Ahlaqul-Karimah/machine-Learning/main/mushrooms.csv")
 df.head()
 
 # normalisasi
@@ -36,7 +36,7 @@ y = df['class'].values
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=1)
 
-st.set_page_config(page_title="Alief Akbar Purnama")
+st.set_page_config(page_title="Ima")
 @st.cache()
 def progress():
     with st.spinner("Bentar ya....."):

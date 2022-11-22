@@ -75,6 +75,7 @@ with modeling:
       st.dataframe(label_knn)
 
 with implementation:
+      from sklearn.preprocessing import OrdinalEncoder
       enc = OrdinalEncoder()
       x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
       # x_new = ["x","s","w","t","p","f","c","n","k","e","e","s","s","w","w","p","w","o","p","k","v","g"] # hasil=1/p

@@ -184,7 +184,8 @@ with implementation:
         from sklearn.naive_bayes import GaussianNB
         from sklearn.preprocessing import LabelEncoder
         le = LabelEncoder()
-        y = le.fit_transform👍
+        asem = y 
+        y = le.fit_transform(asem)
         gaussian = GaussianNB()
         gaussian.fit(x_train, y_train)
         y_pred = gaussian.predict(hinput) 

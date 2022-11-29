@@ -185,7 +185,7 @@ with implementation:
         from sklearn.preprocessing import LabelEncoder
         le = LabelEncoder()
         asem = y 
-        y = le.fit_transform(asem)
+        y = le.fit_transform(y)
         gaussian = GaussianNB()
         gaussian.fit(x_train, y_train)
         y_pred = gaussian.predict(hinput) 

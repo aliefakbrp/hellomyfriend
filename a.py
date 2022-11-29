@@ -95,7 +95,7 @@ with modeling:
         from sklearn.naive_bayes import GaussianNB
         from sklearn.preprocessing import LabelEncoder
         le = LabelEncoder()
-        y = le.fit_transform👍
+        y = le.fit_transform(y)
         gaussian = GaussianNB()
         gaussian.fit(x_train, y_train)
         y_pred = gaussian.predict(x_test) 

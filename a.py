@@ -178,8 +178,8 @@ with implementation:
         sporeprintcolor=st.text_input('spore-print-color: black=k,brown=n,buff=b,chocolate=h,green=r,orange=o,purple=u,white=w,yellow=y')
         population=st.text_input('population: abundant=a,clustered=c,numerous=n,scattered=s,several=v,solitary=y')
         habitat=st.text_input('habitat: grasses=g,leaves=l,meadows=m,paths=p,urban=u,waste=w,woods=d')
-#x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
-        x_new = [str(capshape),str(capsurface),str(capcolor),str(bruises),str(odor),str(gillattachment),str(gillspacing),str(gillsize),str(gillcolor),str(stalkshape),str(stalkroot),str(stalksurfaceabovering),str(stalksurfacebelowring),str(stalkcolorabovering),str(stalkcolorbelowring),str(veiltype),str(veilcolor),str(ringnumber),str(ringtype),str(sporeprintcolor),str(population),str(habitat)] # hasil=1/p
+        x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
+#         x_new = [str(capshape),str(capsurface),str(capcolor),str(bruises),str(odor),str(gillattachment),str(gillspacing),str(gillsize),str(gillcolor),str(stalkshape),str(stalkroot),str(stalksurfaceabovering),str(stalksurfacebelowring),str(stalkcolorabovering),str(stalkcolorbelowring),str(veiltype),str(veilcolor),str(ringnumber),str(ringtype),str(sporeprintcolor),str(population),str(habitat)] # hasil=1/p
         hinput=enc.transform(np.array([x_new]))
         hinput
         from sklearn.neighbors import KNeighborsClassifier

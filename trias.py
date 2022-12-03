@@ -208,7 +208,7 @@ with preprocessing:
     st.write(X)
     
     st.write("Menampilkan Y")
-    st.write👍
+    st.write(y)
 
 with modeling:
     st.write("# Modeling")
